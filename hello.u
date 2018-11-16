@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int max(int i,int j)
+{
+    if (i>j)
+    {
+        return (i);
+    }
+    else
+    {
+        return (j);
+    }
+}
+
+void main()
+{
+    int i,j,k;
+    i = 3;
+    j = 5;
+    printf("hello ,Linux.\n");
+    k = max(i,j);
+    printf("%d\n",k);
+}
