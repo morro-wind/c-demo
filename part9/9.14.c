@@ -9,4 +9,10 @@ main() {
     else {
         printf("not same.\n");          /*結果爲假則輸出不同*/
     }
+    if (bcmp(a, b, 7) == 0) {           /*比較兩個字符串的前7個字符，前7個字符是相同的*/
+        printf("same.\n");
+    }
+    else {
+        printf("not same.\n");          /*結果爲假則輸出不同*/
+    }
 }
