@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 struct student{                 /*定義一個學生結構體*/
     char name[20];              /*姓名*/
@@ -10,11 +11,11 @@ struct student{                 /*定義一個學生結構體*/
 main() {
     struct student Jim, Lily;   /*用結構體聲明兩個學生*/
     Jim.age = 13;               /*對Jim的年齡賦值*/
-    strcpy(Jim.name, "Jim Green");  /*用strcpy 函數對Jmi的姓名賦值*/
+    strcpy(Jim.name, "Jim Green");  /*用strcpy 函數對Jim的姓名賦值*/
     Jim.sex='m';                /*對Jim的性別復制*/
-    Jime.heigh=168/             /*對Jim的身高賦值*/
+    Jim.height=168;             /*對Jim的身高賦值*/
 
-    Lily.age = 13;
+    Lily.age=13;
     strcpy(Lily.name, "Lily Kate");
     Lily.sex='f';
     Lily.height = 174;
