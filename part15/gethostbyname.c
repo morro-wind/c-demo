@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <sys/socket.h>
 #include <netdb.h>
 
@@ -16,7 +17,7 @@ int main(int argc, char *argv[]) {
         printf("Domain name: %s \n", hostname);     /*輸出主機名*/
         printf("IP length: %d\n", host -> h_length);    /*地址長度*/
         printf("Type: %d\n", host -> h_addrtype);   /*地址種類*/
-        printf("IP : %s \n", inet_ntoa(in));    /*IP地址*/
+        printf("IP : %d \n", inet_ntoa(in));    /*IP地址*/
     }
     else {
         printf("Domain name: %s \n", hostname);
@@ -28,7 +29,7 @@ int main(int argc, char *argv[]) {
         memcpy(&addr_in.sin_addr.s_addr, host -> h_addr, 4);
         in.s_addr = addr_in.sin_addr.s_addr;
         printf("Domain name: %s \n", hostname2);
-        printf("IP : %s\n", inet_ntoa(in));
+        printf("IP : %d\n", inet_ntoa(in));
         printf("IP length: %d \n", host -> h_length);
         printf("Type: %d\n", host -> h_addrtype);
     }
